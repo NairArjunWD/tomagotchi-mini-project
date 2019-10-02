@@ -113,10 +113,11 @@ const game = () => {
 
     //DIDSPLAY NAME
 
-    const values = document.querySelector('input');
+    const values = document.querySelector('#submit');
     const displays = document.querySelector('p');
     function displayName() {
-        document.getElementById('display').innerText;
+        document.getElementById('display').innerText = displays;
+        console.log(displays);
     }
 
     
