@@ -6,7 +6,7 @@ let l = 10;
 
 
 class Tomagotchi {
-    constructor(name, age) {
+    constructor(name) {
         this.name = name;
         this.pokemon = [1, 2, 3, 4, 5]
         this.age = ['infant', 'child', 'adult', 'elderly', 'dead'];
@@ -16,25 +16,31 @@ class Tomagotchi {
     }
     aging() {
         this.age[i]
+        for (i = 0; i <= age.length; i ++){
+            
+        }
     }
 }
 
 // All Tomagotchi
 let t1 = new Tomagotchi();
 
-let test=(console.log(Tomagotchi.age[i]))
+// let test=(console.log(Tomagotchi.age[i]))
 
-document.getElementById("inputName").placeholder = "Enter name";
+document.getElementById("nameInput").placeholder = "Enter name";
 
 //game
 const game = () => {
 
     // Aging
-    const aging = setInterval(function(){
-        Tomagotchi.age[i];
-        document.getElementById('age').innerText = i;
-    }, 2000)
-    // aging;
+    // const aging = setInterval(function(){
+    //     Tomagotchi.age[i];
+    //     document.getElementById('age').innerText = i;
+    // }, 2000)
+    // // aging;
+
+
+    
 
 
     // Feeding
