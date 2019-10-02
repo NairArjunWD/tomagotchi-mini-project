@@ -27,6 +27,9 @@ input {
     
 }
 
+p {
+    text-align: center;
+}
 
 
 li {
@@ -34,3 +37,7 @@ li {
     
 }
 
+
+#box {
+    background-color: red
+}

@@ -48,25 +48,33 @@ console.log(pokemon1)
 
 // let test=(console.log(Tomagotchi.age[i]))
 
-document.getElementById("nameInput").placeholder = "Enter name";
+// document.getElementById("nameInput").placeholder = "Enter name";
 
-//game #######################################################
+//GAME #######################################################
 const game = () => {
-
+    // Age ***********************************************
     const age = setInterval(function () {
         i++;
-        if (i === 10) {
-
+        if (i === 100) {
             clearInterval(age); // stops the interval
             console.log('Dead')
-
+        } else if (i === 70){
+            console.log('Elderly')
+        } else if (i === 34){
+            console.log('Adult')
+        } else if (i === 14){
+            console.log('Teen')
+        } else if (i <= 1){
+            console.log('Child')
+        } else {
+            console.log('Egg')
         }
 
         document.getElementById('age').innerText = i;
     }, 1000)
     
 
-    // Feeding
+    // Feeding *********************************************
     const hungry = setInterval(function () {
         j--;
         if (j === 0) {
@@ -79,7 +87,7 @@ const game = () => {
         document.getElementById('hunger').innerText = j;
     }, 1000)
 
-    // Sleepiness
+    // Sleepiness *******************************************
     const sleepiness = setInterval(function () {
         k--;
         if (k === 0) {
@@ -92,7 +100,7 @@ const game = () => {
         document.getElementById('sleepiness').innerText = k;
     }, 1000)
 
-    // Boredom
+    // Boredom **********************************************
     const boredom = setInterval(function () {
         l--;
         if (l === 0) {
@@ -106,22 +114,48 @@ const game = () => {
     }, 1000)
     
 
-    // BUTTON
-    // const add = i ++;
-    // const feed = document.querySelector("#feed");
-    // feed.addEventListener('click', add)
+    // BUTTON *************************************************
+    let feed = document.getElementById("feed");
+    feed.addEventListener('click', function(){
+        j = 10;
+        document.getElementById('hunger').innerHTML
+        console.log(feed)
+    })
 
-    //DIDSPLAY NAME
+    let sleep = document.getElementById("sleep");
+    sleep.addEventListener('click', function () {
+        k = 10;
+        document.getElementById('hunger').innerHTML
+        console.log(feed)
+    })
 
-    const values = document.querySelector('#submit');
-    const displays = document.querySelector('p');
-    function displayName() {
-        document.getElementById('display').innerText = displays;
-        console.log(displays);
-    }
+    let play = document.getElementById("play");
+    play.addEventListener('click', function () {
+        l = 10;
+        document.getElementById('hunger').innerHTML
+        console.log(feed)
+    })
+
+    //DISPLAY NAME ******************************************
+
+    // let values = document.querySelector('#submit');
+    // let displays = document.querySelector('p');
+    // let inputs = document.querySelector('#nameInput')
+    // function displayName() {
+    //     document.getElementById('nameInput').innerHTML = displays;
+    //     console.log(inputs);
+    // }
 
     
-    values.addEventListener('click', displayName)
+    // values.addEventListener('click', displayName)
+
+    let inputName = prompt("Enter the name of your Tomagotchi: ");
+
+    if (inputName!=null){
+        document.getElementById('display').innerText = inputName;
+    }
+
+
 
     
 
