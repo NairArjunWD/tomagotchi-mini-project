@@ -1,23 +1,36 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <title>Tomagotchi Mini Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <div>
-        <input type="text" id="nameInput" />
+<!-- INPUT---------------INPUT------------------------------ -->
+    <div id='name'>
+        <input type="text" id="nameInput" value="name"/>
+        <input id='submit' class="btn btn-primary" type="submit" value="Submit">
     </div>
-
-    <div div='div_action'>
+<!-- BUTTON ---------------------------- BUTTON ------------ -->
+    <div id='div_action'>
         <button id='feed' class='action'>Feed</button>
         <button id='sleep' class='action'>Sleep</button>
         <button id='play' class='action'>Play</button>
+    </div>
+<!-- NAME DISPLAY ---------------- NAME DISPLAY---------------->
+    <div>
+        <p id='display'></p>
+    </div>
+
+    <!-- PICTURE BOX ------------------------------------------>
+    <div id='box'>
+    
     </div>
 
     <!-- PROGRESS BAR ----------------------------------------->
@@ -26,21 +39,21 @@
 
         <ul>
             <li>Age:<output id='age' class='metric'></output></li>
-            <li>Hunger:<output id='hunger' class='metric'>0</output>
+            <li>Hunger:<output id='hunger' class='metric'>10</output>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
             </li>
         
-            <li> Sleepiness:<output id='sleepiness' class='metric'>0</output>
+            <li> Sleepiness:<output id='sleepiness' class='metric'>10</output>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
             </li>
 
-            <li> Boredom:<output id='boredom' class='metric'>0</output>
+            <li> Boredom:<output id='boredom' class='metric'>10</output>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
                         aria-valuemax="100"></div>
@@ -49,15 +62,21 @@
         </ul>
     </div>
     
-    <!-- PICTURE BOX ------------------------------------------>
-    <div id='box'>
 
-    </div>
     <!-- LIGHT SWITCH ----------------------------------------->
     <button type="button" id="switch" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
         Light
     </button>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <script src='js/app.js'></script>
 </body>

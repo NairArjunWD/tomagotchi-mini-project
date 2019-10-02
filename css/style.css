@@ -1,8 +1,30 @@
 
 
+#name {
+}
+
+#div_metric{
+    margin-top: 5%;
+}
+
+#div_action{
+    display: flex;
+    justify-content: center;
+    margin: 2% auto;
+    background-color: aqua
+}
+
+button {
+    display: block;
+    margin: 0 1%;
+    border: none;
+    background-color: aqua
+}
 
 input {
-    margin-left: 5%;
+    display: block;
+    margin: 3% auto;
+    
 }
 
 
