@@ -15,18 +15,23 @@ class Tomagotchi {
         this.boredom = 10;
     }
     aging() {
-        this.age++
+        this.age[i]
     }
 }
 
-let test=(console.log(Tomagotchi.age))
+// All Tomagotchi
+let t1 = new Tomagotchi();
+
+let test=(console.log(Tomagotchi.age[i]))
+
+document.getElementById("inputName").placeholder = "Enter name";
 
 //game
 const game = () => {
 
     // Aging
     const aging = setInterval(function(){
-        i++;
+        Tomagotchi.age[i];
         document.getElementById('age').innerText = i;
     }, 2000)
     // aging;
