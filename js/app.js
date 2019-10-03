@@ -13,23 +13,6 @@ class Tomagotchi {
         this.sleepiness = k;
         this.boredom = l;
     }
-    // aging() {
-    //     this.age[i]
-    //     for (i = 0; i <= 4; i ++){
-    //         if (i=0){
-    //             console.log('Infant')
-    //         } else if (i=1){
-    //             console.log('Child')
-    //         } else if (i = 2) {
-    //             console.log('Adult')
-    //         } else if (i = 3) {
-    //             console.log('Elderly')
-    //         } else{
-    //             console.log('Dead')
-    //         }
-    //     }
-    // }
-    // aging()
 }
 
 // All Tomagotchi ############################################
@@ -55,19 +38,27 @@ const game = () => {
     // Age ***********************************************
     const age = setInterval(function () {
         i++;
-        if (i === 100) {
+        if (i === 0) {
+            clearInterval(age); 
+            console.log('Egg')
+        } else if (i >= 1 && i <= 13){
+            document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/a/a2/Spr_7s_255_m.png';
+            console.log('Child')
+        } else if (i >= 14 && i <= 33){
+            document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/5/5a/Spr_7s_256_m.png';
+            console.log('Teen')
+        } else if (i >= 34 && i <= 69){
+            document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/b/be/Spr_7s_257_m.png';
+            console.log('Adult')
+        } else if (i >= 70 && i <= 98){
+            document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/0/04/Spr_7s_257_m_s.png';
+            console.log('Elderly')
+        } else if(i === 99){
+            console.log('Are you ready to say goodbye?')
+        }else{
+            document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/7/7a/FL_Pokemon_Tower.png';
             clearInterval(age); // stops the interval
             console.log('Dead')
-        } else if (i === 70){
-            console.log('Elderly')
-        } else if (i === 34){
-            console.log('Adult')
-        } else if (i === 14){
-            console.log('Teen')
-        } else if (i <= 1){
-            console.log('Child')
-        } else {
-            console.log('Egg')
         }
 
         document.getElementById('age').innerText = i;
@@ -81,7 +72,7 @@ const game = () => {
 
             clearInterval(hungry); // stops the interval
             console.log('interval stops')
-            
+            alert('Great job! You starved it! Are you proud of yourself?')
         }
         
         document.getElementById('hunger').innerText = j;
@@ -94,7 +85,7 @@ const game = () => {
 
             clearInterval(sleepiness); // stops the interval
             console.log('interval stops')
-
+            alert('Died from exhaustion? Ya, they get tired you horrible human being!')
         }
 
         document.getElementById('sleepiness').innerText = k;
@@ -107,7 +98,7 @@ const game = () => {
 
             clearInterval(boredom); // stops the interval
             console.log('interval stops')
-
+            alert('Your existence has caused it to die of boredom.')
         }
 
         document.getElementById('boredom').innerText = l;
@@ -137,17 +128,6 @@ const game = () => {
     })
 
     //DISPLAY NAME ******************************************
-
-    // let values = document.querySelector('#submit');
-    // let displays = document.querySelector('p');
-    // let inputs = document.querySelector('#nameInput')
-    // function displayName() {
-    //     document.getElementById('nameInput').innerHTML = displays;
-    //     console.log(inputs);
-    // }
-
-    
-    // values.addEventListener('click', displayName)
 
     let inputName = prompt("Enter the name of your Tomagotchi: ");
 
