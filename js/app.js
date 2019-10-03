@@ -135,10 +135,19 @@ const game = () => {
         document.getElementById('display').innerText = inputName;
     }
 
+    // LIGHT SWITCH *****************************************
 
+    function lightSwitch() {
+        document.body.style.backgroundColor = 'green';
+        return false;
+    }
+
+    let switchToggle = document.getElementById('test');
+
+    switchToggle.addEventListener('click',lightSwitch());
 
     
 
 }
 
-game()
+// game()

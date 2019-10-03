@@ -1,24 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: 20px solid #000000;
+    color: #FFD700;
+    text-shadow: -1px 0 #50c878, 0 1px #50c878, 1px 0 #50c878, 0 -1px #50c878;
+    background-color: 
+    
+}
 
 
 #name {
+
 }
 
 #div_metric{
     margin-top: 5%;
+    letter-spacing: .1rem;
 }
 
 #div_action{
     display: flex;
     justify-content: center;
     margin: 2% auto;
-    background-color: aqua
+    background-color: white
 }
 
 button {
     display: block;
     margin: 0 1%;
     border: none;
-    background-color: aqua
+    font-size: 30px;
+    letter-spacing: .1rem;
+    color: #FFD700;
+    background-color: white;
+    text-shadow: -1px 0 #50c878, 0 1px #50c878, 1px 0 #50c878, 0 -1px #50c878;
 }
 
 input {
@@ -65,4 +82,42 @@ li {
     animation-name: slidein;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background: #000000;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    padding-top: 20px;
+    margin: 0;
+    
+}
+
+#logo {
+    
+    
+}
+
+#gameBoy {
+    font-weight: 600;
+    letter-spacing: -.2rem;
+    
+}
+
+#advance {
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -.3rem;
+}
+
+#sp {
+    padding-left: 1%;
+    font-weight: 100;
+}
+
+@media(prefers-color-scheme: dark) {
+    body :active{
+        background-color: grey;
+    }
 }
