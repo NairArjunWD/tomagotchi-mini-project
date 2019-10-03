@@ -6,14 +6,9 @@ body {
     border: 20px solid #000000;
     color: #FFD700;
     text-shadow: -1px 0 #50c878, 0 1px #50c878, 1px 0 #50c878, 0 -1px #50c878;
-    background-color: 
-    
-}
-
-
-#name {
 
 }
+
 
 #div_metric{
     margin-top: 5%;
@@ -116,8 +111,6 @@ h1 {
     font-weight: 100;
 }
 
-@media(prefers-color-scheme: dark) {
-    body :active{
-        background-color: grey;
-    }
+.grey {
+    background-color: #4d4d4d;
 }

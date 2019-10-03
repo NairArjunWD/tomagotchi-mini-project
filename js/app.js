@@ -44,6 +44,7 @@ const game = () => {
         } else if (i >= 1 && i <= 13){
             document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/a/a2/Spr_7s_255_m.png';
             console.log('Child')
+            alert('Your egg hatched!')
         } else if (i >= 14 && i <= 33){
             document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/5/5a/Spr_7s_256_m.png';
             console.log('Teen')
@@ -137,17 +138,37 @@ const game = () => {
 
     // LIGHT SWITCH *****************************************
 
-    function lightSwitch() {
-        document.body.style.backgroundColor = 'green';
-        return false;
+    // document.querySelector('body').addEventListener('click', lightsOff);
+
+    // function lightsOff() {
+    //     this.style.backgroundColor = '#4d4d4d';
+    //     return false;
+    // }
+
+    function start() {
+        let on = document.getElementById('switch')
+        on.addEventListener('click', toggle)
     }
 
-    let switchToggle = document.getElementById('test');
+    function toggle() {
+        let color = document.getElementById('body')
+        color.classList.toggle('grey')
+    }
 
-    switchToggle.addEventListener('click',lightSwitch());
+    start();
+
+    
+
+
+
+    // let switchToggle = document.getElementById('test');
+
+    // switchToggle.addEventListener('click',lightSwitch());
+
+    
 
     
 
 }
 
-// game()
+game()

@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id='body' class='grey'>
 <!-- INPUT---------------INPUT------------------------------ -->
     <!-- <div id='name'>
         <input type="text" id="nameInput" value="name"/>
         <input id='submit' class="btn btn-primary" type="submit" value="Submit">
     </div> -->
 <!-- BUTTON ---------------------------- BUTTON ------------ -->
-    <div id='div_action'>
+    <div id='div_action' class='toggle'>
         <button id='feed' class='action'>Feed</button>
         <button id='sleep' class='action'>Sleep</button>
         <button id='play' class='action'>Play</button>
@@ -29,7 +29,7 @@
     </div>
 
     <!-- PICTURE BOX ------------------------------------------>
-    <div id='box'>
+    <div id='box' class='toggle'>
         <img src='https://i.pinimg.com/originals/02/c7/05/02c70572482476ba3ec8c4962f883705.png' alt='torchick' id='img'/>
     </div>
 
@@ -47,14 +47,14 @@
         
             <li> Sleepiness:<output id='sleepiness' class='metric'>10</output>
                 <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
             </li>
 
             <li> Boredom:<output id='boredom' class='metric'>10</output>
                 <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
             </li>
@@ -63,11 +63,11 @@
     
 
     <!-- LIGHT SWITCH ----------------------------------------->
-    <button type="button" id="switch" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+    <button type="button" id="switch" class="btn btn-primary" >
         Light
     </button>
 
-    <button id='test'>test</button>
+    
 
     <div id='logo'><h1><span id='gameBoy'>GAME DUDE</span> <span id='advance'>ADVANCE</span> <span id='sp'>SP</span></h1></div>
 
