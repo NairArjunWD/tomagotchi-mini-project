@@ -6,7 +6,8 @@ body {
     border: 20px solid #000000;
     color: #FFD700;
     text-shadow: -1px 0 #50c878, 0 1px #50c878, 1px 0 #50c878, 0 -1px #50c878;
-
+    background-image: url('https://images4.alphacoders.com/574/thumb-1920-574726.jpg');
+    
 }
 
 
@@ -31,6 +32,7 @@ button {
     color: #FFD700;
     background-color: white;
     text-shadow: -1px 0 #50c878, 0 1px #50c878, 1px 0 #50c878, 0 -1px #50c878;
+    
 }
 
 input {
@@ -112,5 +114,6 @@ h1 {
 }
 
 .grey {
-    background-color: #4d4d4d;
+    
+    
 }

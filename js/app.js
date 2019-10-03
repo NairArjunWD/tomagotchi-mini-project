@@ -1,8 +1,8 @@
 
 let i = 0;
-let j = 10;
-let k = 10;
-let l = 10;
+let j = 50;
+let k = 50;
+let l = 50;
 
 
 class Tomagotchi {
@@ -44,7 +44,7 @@ const game = () => {
         } else if (i >= 1 && i <= 13){
             document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/a/a2/Spr_7s_255_m.png';
             console.log('Child')
-            alert('Your egg hatched!')
+            
         } else if (i >= 14 && i <= 33){
             document.getElementById("img").src = 'https://cdn.bulbagarden.net/upload/5/5a/Spr_7s_256_m.png';
             console.log('Teen')
@@ -73,6 +73,7 @@ const game = () => {
 
             clearInterval(hungry); // stops the interval
             console.log('interval stops')
+            i = 100;
             alert('Great job! You starved it! Are you proud of yourself?')
         }
         
@@ -109,21 +110,21 @@ const game = () => {
     // BUTTON *************************************************
     let feed = document.getElementById("feed");
     feed.addEventListener('click', function(){
-        j = 10;
+        j = 50;
         document.getElementById('hunger').innerHTML
         console.log(feed)
     })
 
     let sleep = document.getElementById("sleep");
     sleep.addEventListener('click', function () {
-        k = 10;
+        k = 50;
         document.getElementById('hunger').innerHTML
         console.log(feed)
     })
 
     let play = document.getElementById("play");
     play.addEventListener('click', function () {
-        l = 10;
+        l = 50;
         document.getElementById('hunger').innerHTML
         console.log(feed)
     })
@@ -156,6 +157,16 @@ const game = () => {
     }
 
     start();
+
+    function start() {
+        let on = document.getElementById('switch')
+        on.addEventListener('click', toggle)
+    }
+
+    function toggle() {
+        let color = document.getElementById('box')
+        color.classList.toggle('grey')
+    }
 
     
 
